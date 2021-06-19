@@ -19,7 +19,7 @@ const sadWords = ["kurang pede", "nyerah", "ga percaya diri", "capek"]
   })
   
   client.on("message", msg => {
-    console.log(msg)
+    
 
     if (msg.author.id == '852531807072813086')
         return;
