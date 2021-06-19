@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const { Client, MessageAttachment, Message } = require('discord.js');
 const client = new Client();
 
