@@ -19,6 +19,11 @@ const sadWords = ["kurang pede", "nyerah", "ga percaya diri", "capek"]
   })
   
   client.on("message", msg => {
+    console.log(msg)
+
+    if (msg.author.id == '852531807072813086')
+        return;
+
     if (msg.content === "bingung") {
       msg.reply("sudah check stackoverflow.com atau google.com belum ka?");
     }
@@ -31,25 +36,16 @@ const sadWords = ["kurang pede", "nyerah", "ga percaya diri", "capek"]
         msg.reply('bisa di cek di sini ka https://sites.google.com/glints.com/bootcamp/ib12?authuser=0')
     }
 
-    if (msg.content = sadWords) {
+    if (sadWords.includes(msg.content.replace('!', ''))) {
         const attachment = new MessageAttachment('https://i.imgur.com/ADxrAFS.jpg');
         msg.channel.send(`${msg.author},`, attachment);
       }
     
-    if (msg.content === "kurang pede") {
-        const attachment = new MessageAttachment('https://i.imgur.com/ADxrAFS.jpg');
-        msg.channel.send(`${msg.author},`, attachment);
-      }
+    
+    
 
-    if (msg.content === "nyerah") {
-        const attachment = new MessageAttachment('https://i.imgur.com/ADxrAFS.jpg');
-        msg.channel.send(`${msg.author},`, attachment);
-      }
-
-    if (msg.content === "ga percaya diri") {
-        const attachment = new MessageAttachment('https://i.imgur.com/ADxrAFS.jpg');
-        msg.channel.send(`${msg.author},`, attachment);
-      }
+   
+      
 
     if (msg.content === "bro") {
         msg.reply('naon');
