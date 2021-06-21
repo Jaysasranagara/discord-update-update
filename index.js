@@ -95,6 +95,10 @@ const sadWords = ["kurang pede", "nyerah", "ga percaya diri", "capek"]
         message.reply ('test')
     }
 
+    if(msg.content === "!testupdate") {
+        msg.reply ('update received 21-06-2021')
+    }
+
   
 
 });
