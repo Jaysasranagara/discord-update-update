@@ -29,7 +29,7 @@ const sadWords = ["kurang pede", "nyerah", "ga percaya diri", "capek"]
     }
 
     if (msg.content === "!silabus") {
-        msg.reply('https://discord.com/channels/696903768117084281/838708808423178260/846325598230282241')
+        msg.reply('https://drive.google.com/file/d/1B0qbueXfjeph5seCeZQT9MJpyUtPfFjf/view?usp=sharing')
     }
 
     if (msg.content === "!jadwal") {
@@ -95,10 +95,11 @@ const sadWords = ["kurang pede", "nyerah", "ga percaya diri", "capek"]
         message.reply ('test')
     }
 
-    if(msg.content === "!testupdate") {
-        msg.reply ('update received 21-06-2021')
+    if(msg.content === "!lastupdate") {
+        msg.reply ('last update received 21-06-2021')
     }
 
+   
   
 
 });
